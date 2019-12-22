@@ -1,6 +1,6 @@
 # Flip-Card
 
-Questa applicazione è in grado di mostrare sul lato "A" della card le condizioni atmosteferiche degli
+Questa applicazione è in grado di mostrare sul lato "A" della card le condizioni atmosferiche degli
 ultimi 7 giorni partendo dal giorno corrente, e sul lato "B" la posizione corrente dell'utente.
 
 # Installazione

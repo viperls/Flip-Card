@@ -9,10 +9,6 @@ class FlipCard extends Component {
         getCurrentLocationData();
     }
 
-    flipCard() {
-        console.log("flip card");
-    };
-
     render() {
         return (
             <div className="flip-card">
@@ -20,10 +16,6 @@ class FlipCard extends Component {
                     <FrontCard />
                     <RearCard />
                 </div>
-                <button className="button" onClick={() => {
-                    this.flipCard()
-                }}> Flip Card
-                </button>
             </div>);
     }
 }
