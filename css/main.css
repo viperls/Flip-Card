@@ -1,0 +1,193 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.flip-card {
+    background-color: transparent;
+    height: 520px;
+    width: 768px;
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-image: url('./img/Bitmap.png');
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+}
+
+.flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.artwork {
+    height: 545px;
+    width: 768px;
+}
+
+.divider {
+    box-sizing: border-box;
+    height: 1px;
+    width: 768px;
+    border: 2px solid #FFFFFF;
+    opacity: 0.18;
+}
+
+.rectangle {
+    box-sizing: border-box;
+    height: 120px;
+    width: 95px;
+    float: left;
+}
+
+.rectangle:hover {
+    border: 1px solid #C69887;
+    border-radius: 12px;
+    background-color: rgba(247, 248, 250, 0.18);
+}
+
+.top-content {
+    height: 357px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.weahter-icon img {
+    height: 132px;
+    width: 144px;
+}
+
+.stacked-group {
+    height: 140px;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.wheater-day {
+    height: 115px;
+}
+
+.day {
+    height: 19px;
+    width: 57px;
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.weather {
+    height: 42px;
+    width: 54px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.data {
+    height: 19px;
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19px;
+    text-align: center;
+}
+
+.location {
+    height: 55px;
+    width: 230px;
+    margin-top: 20px;
+}
+
+.nameCity {
+    height: 55px;
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 39.93px;
+    font-weight: 300;
+    line-height: 55px;
+    text-align: center;
+}
+
+.placeholder {
+    height: 23px;
+    width: 23px;
+    margin-top: 16px;
+}
+
+.other-data {
+    height: 55px;
+    margin-top: 10px;
+}
+
+.other-data p {
+    padding: 5px;
+}
+
+.temperature {
+    height: 75px;
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 75px;
+}
+
+.description {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.button {
+    margin-top: 10px;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.marker {
+    color: red;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #fff;
+    width: 200px;
+    height: auto;
+    border-radius: 2px;
+}
