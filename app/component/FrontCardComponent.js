@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {convertDate} from "../util/appUtil";
 import ImgComponent from "../component/WeahterImgComponent";
-import Placeholder from '../../css/img/placeholder.svg';
+import Placeholder from '../../less/img/placeholder.svg';
 
 class FrontCard extends Component {
     constructor(props) {
@@ -34,7 +34,7 @@ class FrontCard extends Component {
                     <hr className="divider"/>
                     <div className="stacked-group">
                         {this.state.data.map((elm, index) => {
-                            if (index != 0 && index <= 7) {
+                            if (index !== 0 && index <= 7) {
                                 return (
                                     <div className="rectangle" key={index}>
                                         <div className="wheater-day">
