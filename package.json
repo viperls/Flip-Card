@@ -12,7 +12,8 @@
     "google-map-react": "^1.1.5",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "url-loader": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",

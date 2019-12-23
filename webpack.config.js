@@ -34,20 +34,6 @@ module.exports = {
                 }
             },
             {
-                test: /\.svg$/,
-                use: [
-                    {
-                        loader: "babel-loader"
-                    },
-                    {
-                        loader: "react-svg-loader",
-                        options: {
-                            jsx: true // true outputs JSX tags
-                        }
-                    }
-                ]
-            },
-            {
                 test: /\.css$/,
                 use: [
                     {
@@ -57,10 +43,10 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|jpg|jpeg|gif)$/,
+                test: /\.(png|svg|jpg|jpeg|gif)$/,
                 use: [
                     {
-                        loader: 'file-loader',
+                        loader: 'url-loader',
                         options: {
                             outputPath: 'img',
                         }
