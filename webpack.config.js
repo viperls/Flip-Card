@@ -34,12 +34,13 @@ module.exports = {
                 }
             },
             {
-                test: /\.less$/,
+                test: /\.css$/,
                 use: [
-                    'style-loader',
-                    'css-loader',
-                    'less-loader'
-                ],
+                    {
+                        loader: MiniCssExtractPlugin.loader
+                    },
+                    'css-loader'
+                ]
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/,
@@ -72,7 +73,7 @@ module.exports = {
             filename: "index.html"
         }),
         new MiniCssExtractPlugin({
-            filename: "less/[name].less",
+            filename: "css/[name].css",
             chunkFilename: "css/[id].css"
         })
     ]

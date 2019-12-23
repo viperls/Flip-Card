@@ -24,16 +24,14 @@
     "css-loader": "^3.4.0",
     "file-loader": "^5.0.2",
     "html-webpack-plugin": "^3.2.0",
-    "less": "^3.10.3",
-    "less-loader": "^5.0.0",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.0",
-    "react-svg-loader": "^3.0.3",
     "sass-loader": "^8.0.0",
-    "style-loader": "^1.1.1",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1",
-    "write-file-webpack-plugin": "^4.5.1"
+    "write-file-webpack-plugin": "^4.5.1",
+    "style-loader": "^1.1.1",
+    "react-svg-loader": "^3.0.3"
   }
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import Nuvoloso from '../../less/img/nuvoloso.svg';
-import Sole from '../../less/img/sole.svg';
-import Neve from '../../less/img/neve.svg';
-import Temporale from '../../less/img/tempolare.svg';
+import Nuvoloso from '../../css/img/nuvoloso.svg';
+import Sole from '../../css/img/sole.svg';
+import Neve from '../../css/img/neve.svg';
+import Temporale from '../../css/img/tempolare.svg';
 
 const ImgComponent = ({code}) => {
     switch (code) {

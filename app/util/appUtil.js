@@ -40,3 +40,14 @@ export const convertCodeToImg = (code) => {
     return img;
 };
 
+
+export const checkSiteData = () => {
+    const siteData = JSON.parse(localStorage.getItem('flipCardWeather'));
+
+    if (siteData) {
+        return true;
+    }
+
+    return false;
+}
+

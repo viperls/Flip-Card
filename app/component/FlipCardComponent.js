@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import FrontCard from '../component/FrontCardComponent';
 import RearCard from '../component/RearCardComponent';
 import {getCurrentLocationData} from "../service/api";
+import {checkSiteData} from "../util/appUtil";
 
 class FlipCard extends Component {
     constructor(props) {
@@ -13,8 +14,15 @@ class FlipCard extends Component {
         return (
             <div className="flip-card">
                 <div className="flip-card-inner">
-                    <FrontCard />
-                    <RearCard />
+                    {
+                        checkSiteData() ?
+                            <div>
+                                <FrontCard />
+                                <RearCard />
+                            </div>
+                            : null
+                    }
+
                 </div>
             </div>);
     }

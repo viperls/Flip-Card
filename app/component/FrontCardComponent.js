@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {convertDate} from "../util/appUtil";
 import ImgComponent from "../component/WeahterImgComponent";
-import Placeholder from '../../less/img/placeholder.svg';
+import Placeholder from '../../css/img/placeholder.svg';
 
 class FrontCard extends Component {
     constructor(props) {

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./less/main.less";
+import "./css/main.css";
 
 import App from './App';
 
