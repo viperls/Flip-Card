@@ -46,8 +46,8 @@ export const checkSiteData = () => {
 
     if (siteData) {
         return true;
+    } else {
+        return false;
     }
-
-    return false;
 }
 
