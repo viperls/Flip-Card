@@ -11,12 +11,12 @@ module.exports = {
     devtool: 'inline-source-map',
     devServer: {
         contentBase: path.join(__dirname, './'),
-        publicPath: '/',
+        publicPath: './',
     },
     output: {
         filename: 'js/[name].bundle.js',
         path: path.resolve(__dirname, 'static'),
-        publicPath: '/'
+        publicPath: './'
     },
     resolve: {
         extensions: ['*', '.js', '.jsx']
@@ -71,8 +71,8 @@ module.exports = {
             filename: "index.html"
         }),
         new MiniCssExtractPlugin({
-            filename: "css/[name].css",
-            chunkFilename: "css/[id].css"
+            filename: "[name].css",
+            chunkFilename: "[id].css"
         })
     ]
 };
