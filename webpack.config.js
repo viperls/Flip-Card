@@ -26,7 +26,7 @@ module.exports = {
     },
     module: {
         rules: [
-            { // config for es6 jsx
+            {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
@@ -49,6 +49,7 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             outputPath: 'img',
+                            name: '[name].[ext]'
                         }
                     }
                 ],

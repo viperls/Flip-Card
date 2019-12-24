@@ -7,7 +7,6 @@ class FrontCard extends Component {
     constructor(props) {
         super(props);
         this.state = JSON.parse(localStorage.getItem('flipCardWeather'));
-        //console.log(this.state);
     }
 
     render() {
@@ -16,8 +15,8 @@ class FrontCard extends Component {
                 <div className="flip-card-front">
                     <div className="top-content">
                         <div className="location">
-                            <div className="flipCard-flotLeft"><img alt="placeholder" src={Placeholder}
-                                                                    className="placeholder"/>
+                            <div className="flipCard-flotLeft">
+                                <img alt="placeholder" src={Placeholder} className="placeholder"/>
                             </div>
                             <div className="nameCity">{this.state.city_name}</div>
                         </div>
