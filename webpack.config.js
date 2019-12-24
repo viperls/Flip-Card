@@ -19,10 +19,7 @@ module.exports = {
         publicPath: '/'
     },
     resolve: {
-        extensions: ['*', '.js', '.jsx'],
-        alias: {
-            '@': path.resolve(__dirname, 'src')
-        }
+        extensions: ['*', '.js', '.jsx']
     },
     module: {
         rules: [
@@ -48,7 +45,7 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            outputPath: 'img',
+                            outputPath: 'css/img',
                             name: '[name].[ext]'
                         }
                     }
