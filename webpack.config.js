@@ -10,16 +10,17 @@ module.exports = {
     },
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: path.join(__dirname, './'),
-        publicPath: './',
+        contentBase: path.join(__dirname, './')
     },
     output: {
         filename: 'js/[name].bundle.js',
-        path: path.resolve(__dirname, 'static'),
-        publicPath: './'
+        path: path.resolve(__dirname, 'static')
     },
     resolve: {
-        extensions: ['*', '.js', '.jsx']
+        extensions: ['*', '.js', '.jsx'],
+        alias: {
+            '@': path.resolve(__dirname, 'src')
+        }
     },
     module: {
         rules: [
@@ -45,13 +46,13 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            outputPath: 'css/img',
+                            outputPath: 'img',
                             name: '[name].[ext]'
                         }
                     }
                 ],
             },
-            {
+            /*{
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
                 use: [
                     {
@@ -61,7 +62,7 @@ module.exports = {
                         }
                     }
                 ],
-            }
+             }*/
         ]
     },
     plugins: [
@@ -71,8 +72,8 @@ module.exports = {
             filename: "index.html"
         }),
         new MiniCssExtractPlugin({
-            filename: "[name].css",
-            chunkFilename: "[id].css"
+            filename: "css/[name].css",
+            chunkFilename: "css/[id].css"
         })
     ]
 };
