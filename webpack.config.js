@@ -18,9 +18,9 @@ module.exports = {
     },
     resolve: {
         extensions: ['*', '.js', '.jsx'],
-        alias: {
+        /*alias: {
             '@': path.resolve(__dirname, 'src')
-        }
+         }*/
     },
     module: {
         rules: [
@@ -51,18 +51,7 @@ module.exports = {
                         }
                     }
                 ],
-            },
-            /*{
-                test: /\.(woff|woff2|eot|ttf|otf)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            outputPath: 'fonts',
-                        }
-                    }
-                ],
-             }*/
+            }
         ]
     },
     plugins: [
@@ -72,8 +61,8 @@ module.exports = {
             filename: "index.html"
         }),
         new MiniCssExtractPlugin({
-            filename: "css/[name].css",
-            chunkFilename: "css/[id].css"
+            filename: "[name].css",
+            chunkFilename: "[id].css"
         })
     ]
 };

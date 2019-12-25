@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import {convertDate} from "../util/appUtil";
-import ImgComponent from "../component/WeahterImgComponent";
-import Placeholder from '../../css/img/placeholder.svg';
+import {convertDate, convertCodeToImg} from "../util/appUtil";
 
 class FrontCard extends Component {
     constructor(props) {
@@ -16,12 +14,14 @@ class FrontCard extends Component {
                     <div className="top-content">
                         <div className="location">
                             <div className="flipCard-flotLeft">
-                                <img alt="placeholder" src={Placeholder} className="placeholder"/>
+                                <div className="placeholder"></div>
                             </div>
                             <div className="nameCity">{this.state.city_name}</div>
                         </div>
 
-                        <p className="weahter-icon"><ImgComponent code={this.state.data[0].weather.code}/></p>
+                        <p className="weahter-icon">
+                            <div className={convertCodeToImg(this.state.data[0].weather.code)}></div>
+                        </p>
 
                         <p className="temperature">{this.state.data[0].temp} <span>&deg;</span></p>
                         <div className="other-data">
@@ -38,7 +38,9 @@ class FrontCard extends Component {
                                     <div className="rectangle" key={index}>
                                         <div className="wheater-day">
                                             <p className="day">{convertDate(elm.valid_date)}</p>
-                                            <p className="weather"><ImgComponent code={elm.weather.code}/></p>
+                                            <p className="weather">
+                                                <div className={convertCodeToImg(elm.weather.code)}></div>
+                                            </p>
                                             <p className="data">{elm.max_temp} <span>&deg;</span> - {elm.min_temp}
                                                 <span>&deg;</span></p>
                                         </div>

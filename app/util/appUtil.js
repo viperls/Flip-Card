@@ -11,33 +11,33 @@ export const convertDate = (stringDate) => {
 };
 
 export const convertCodeToImg = (code) => {
-    let img;
+    let className;
 
     switch (code) {
         case 230:
         case 231:
         case 232:
         case 233:
-            img = "./css/img/temporale.svg";
+            className = "temporale";
             break;
         case 600:
         case 601:
-            img = "./css/img/neve.svg";
+            className = "neve";
             break;
         case 800:
-            img = "./css/img/sole.svg";
+            className = "sole";
             break;
         case 801:
         case 802:
         case 803:
         case 804:
         case 900:
-            img = "./css/img/nuvoloso.svg";
+            className = "nuvoloso";
             break;
         default:
-            img = "./css/img/nuvoloso.svg";
+            className = "nuvoloso";
     }
-    return img;
+    return className;
 };
 
 

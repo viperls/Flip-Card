@@ -76,9 +76,9 @@ p {
     margin: 0 auto;
 }
 
-.weahter-icon img {
+.weahter-icon {
     height: 132px;
-    width: 144px;
+    width: auto;
 }
 
 .stacked-group {
@@ -139,6 +139,46 @@ p {
     height: 23px;
     width: 23px;
     margin-top: 16px;
+    background-image: url('./img/placeholder.svg');
+    background-repeat: no-repeat;
+}
+
+.temporale {
+    background-image: url('./img/tempolare.svg');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    height: 32px;
+    background-size: 54px 32px;
+}
+
+.neve {
+    background-image: url('./img/neve.svg');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    height: 32px;
+    background-size: 54px 32px;
+}
+
+.sole {
+    background-image: url('./img/sole.svg');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    height: 32px;
+    background-size: 54px 32px;
+}
+
+.nuvoloso {
+    background-image: url('./img/nuvoloso.svg');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    height: 32px;
+    background-size: 54px 32px;
+}
+
+.weahter-icon .nuvoloso {
+    height: 132px;
+    width: 144px;
+    background-size: 144px 132px;
 }
 
 .other-data {
