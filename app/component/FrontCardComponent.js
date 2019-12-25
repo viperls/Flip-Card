@@ -19,9 +19,9 @@ class FrontCard extends Component {
                             <div className="nameCity">{this.state.city_name}</div>
                         </div>
 
-                        <p className="weahter-icon">
+                        <div className="weahter-icon">
                             <div className={convertCodeToImg(this.state.data[0].weather.code)}></div>
-                        </p>
+                        </div>
 
                         <p className="temperature">{this.state.data[0].temp} <span>&deg;</span></p>
                         <div className="other-data">
@@ -38,9 +38,9 @@ class FrontCard extends Component {
                                     <div className="rectangle" key={index}>
                                         <div className="wheater-day">
                                             <p className="day">{convertDate(elm.valid_date)}</p>
-                                            <p className="weather">
+                                            <div className="weather">
                                                 <div className={convertCodeToImg(elm.weather.code)}></div>
-                                            </p>
+                                            </div>
                                             <p className="data">{elm.max_temp} <span>&deg;</span> - {elm.min_temp}
                                                 <span>&deg;</span></p>
                                         </div>
